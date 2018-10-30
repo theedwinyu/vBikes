@@ -36,16 +36,6 @@ let totalDurationInSeconds = 0;
 let dataLineChart = [];
 let t = d3.transition().duration(1500);
 
-// Indexes of columns in the csv file
-// 0        1         2           3         4
-// Trip ID, Duration, Start Time, End Time, Starting Station ID,
-// 5                          6                           7                  8
-// Starting Station Latitude, Starting Station Longitude, Ending Station ID, Ending Station Latitude,
-// 9                         10        11            12
-// Ending Station Longitude, Bike ID, Plan Duration, Trip Route Category,
-// 13               14                 15
-// Passholder Type, Starting Lat-Long, Ending Lat-Long
-
 //Calculate and update Average distance in KM and miles in index.HTML
 function getAverageDistanceUsingDuration(){
 
@@ -582,6 +572,7 @@ function initMap(popularStartLoc, popularEndLoc,stationLatLongMap, startStations
         data: startStationData,
         dissipating: true,
         maxIntensity: 10000,
+        opacity: 1,
         radius: 15
     });
     heatmap.setMap(map);
@@ -1191,8 +1182,6 @@ function makeLineChart(dataset, xName, yObjs, axisLables) {
 //function to get line chart data from map created from fillStationTripHourMap
 function getLineChartData(){
 
-    console.log(stationTripHourMap);
-
     let lineChartData = {};
 
     for (let stationId in stationTripHourMap){
@@ -1211,8 +1200,6 @@ function getLineChartData(){
         lineChartData[stationId] = objArr;
 
     }
-
-    console.log(lineChartData);
 
     return lineChartData;
 

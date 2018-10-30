@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3ed51f6-3128-499d-a532-3b7d709f6d76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/myscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/myscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -76,23 +74,23 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="492" />
-          <entry key="js" value="989" />
+          <entry key="js" value="1137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="492" />
-          <entry key="JavaScript" value="989" />
+          <entry key="JavaScript" value="1137" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
+            <state relative-caret-position="1708">
               <caret line="142" column="120" selection-start-line="142" selection-start-column="120" selection-end-line="142" selection-end-column="120" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -128,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
+            <state relative-caret-position="489">
+              <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
@@ -180,10 +178,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>basis</find>
-      <find>month</find>
-      <find>domain</find>
-      <find>rangeR</find>
       <find>focus</find>
       <find>call</find>
       <find>attr</find>
@@ -193,7 +187,6 @@
       <find>inner</find>
       <find>transiton</find>
       <find>transition</find>
-      <find>console.log</find>
       <find>getMostP</find>
       <find>chartIniti</find>
       <find>countHours</find>
@@ -210,6 +203,11 @@
       <find>mysc</find>
       <find>regu</find>
       <find>kilometers</find>
+      <find>console</find>
+      <find>populari</find>
+      <find>console.log</find>
+      <find>console.log(ma</find>
+      <find>initMap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -221,8 +219,8 @@
         <option value="$PROJECT_DIR$/assets/js/colorbrewer.min.js" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/assets/js/myscript.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/myscript.js" />
       </list>
     </option>
   </component>
@@ -303,12 +301,12 @@
       <workItem from="1540698457299" duration="927000" />
       <workItem from="1540699582380" duration="1283000" />
       <workItem from="1540788177210" duration="1041000" />
-      <workItem from="1540848206372" duration="4176000" />
+      <workItem from="1540848206372" duration="5533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158368000" />
+    <option name="totallyTimeSpent" value="159725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -399,24 +397,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="e#34879#43602#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="1708">
           <caret line="142" column="120" selection-start-line="142" selection-start-column="120" selection-end-line="142" selection-end-column="120" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -435,6 +418,21 @@
             <element signature="n#style#0;n#div#0;n#article#1;n#section#0;n#div#0;n#section#3;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#article#1;n#section#0;n#div#0;n#section#3;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#i#0;n#div#0;n#section#3;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tspan#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="e#34879#43602#0" />
           </folding>
         </state>
       </provider>
