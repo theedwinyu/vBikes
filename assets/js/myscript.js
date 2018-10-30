@@ -51,16 +51,16 @@ function getAverageDistanceUsingDuration(){
 
     let totalDurationHour = totalDurationInSeconds/3600.0;
 
-    //Assume 8 mph for average biker
+    //Assumed mph for average biker
     let averageSpeed = 10;
 
     //in Kilomters
     let miles = Math.round( (totalDurationHour * averageSpeed/totalTrips) * 100) / 100;
 
-    document.getElementById("avgSpeed").innerHTML = "Assuming the average speed for a biker in LA is " + averageSpeed + " miles/hour";
-    document.getElementById("totalDuration").innerHTML = "Total duration of all trips: " + totalDurationInSeconds + " seconds";
-    document.getElementById("numTrips").innerHTML = "Total number of trips: " + totalTrips;
-    document.getElementById("distMiles").innerHTML = "Average Distance in miles: " + miles + " miles";
+    // document.getElementById("avgSpeed").innerHTML = "Assuming the average speed for a biker in LA is " + averageSpeed + " miles/hour";
+    // document.getElementById("totalDuration").innerHTML = "Total duration of all trips: " + totalDurationInSeconds + " seconds";
+    // document.getElementById("numTrips").innerHTML = "Total number of trips: " + totalTrips;
+    // document.getElementById("distMiles").innerHTML = "Average Distance in miles: " + miles + " miles";
 
 }
 
@@ -83,6 +83,11 @@ function getAverageDistance(csvdata){
 
     let totalDistance = 0.0;
     let i;
+    let totalDurationRoundTrip = 0;
+    let numOneWay = 0;
+    let numRoundTrip = 0;
+
+    let averageSpeed = 6;
 
     for (i = 1; i < csvdata["data"].length-1; i++){
 
@@ -97,18 +102,36 @@ function getAverageDistance(csvdata){
 
             let lon2 = parseFloat(csvdata["data"][i][9]);
 
-            totalDistance += distanceLatLong(lat1,lon1,lat2,lon2);
+            if(lat1 === lat2 && lon1 === lon2){
+                totalDurationRoundTrip += parseFloat(csvdata["data"][i][1]);
+                numRoundTrip += 1;
+            }
+            else{
+                totalDistance += distanceLatLong(lat1,lon1,lat2,lon2);
+                numOneWay += 1;
+            }
         }
 
     }
 
+    document.getElementById("avgSpeed").innerHTML = "Assume that the average biker travels at " + averageSpeed + " Miles Per Hour.";
+
+    let timeHours = totalDurationRoundTrip/3600.0;
+
+    let kmRoundTrip = Math.round((timeHours * averageSpeed/numRoundTrip) * 100) / 100;
+
     //in Kilomters
-    let kilometers = Math.round(totalDistance/csvdata["data"].length * 100) / 100;
+    let kilometers = Math.round(totalDistance/numOneWay * 100) / 100;
     let miles =  Math.round(kilometers / 1.609 * 100) / 100;
 
-    document.getElementById("numTrips").innerHTML = csvdata["data"].length + " trips";
-    document.getElementById("distKm").innerHTML = kilometers + " kilometers";
-    document.getElementById("distMiles").innerHTML = miles + " miles";
+    document.getElementById("numRoundTrip").innerHTML = numRoundTrip + " trips";
+    document.getElementById("numOneWay").innerHTML = numOneWay + " trips";
+    document.getElementById("distRoundTripKm").innerHTML = kmRoundTrip + " kilometers";
+    document.getElementById("distOneWayKm").innerHTML = kilometers + " kilometers";
+
+    let totalAvgDist = kilometers * (numOneWay/(numRoundTrip+numOneWay)) + kmRoundTrip * (numRoundTrip/(numRoundTrip+numOneWay));
+    let roundedAvgDist = Math.round(totalAvgDist * 100) / 100;
+    document.getElementById("avgCombinedDist").innerHTML = "Total Average Distance: " + roundedAvgDist + " kilometers";
     return kilometers + " kilometers";
 }
 
@@ -781,7 +804,7 @@ function updateBarChart(dataArray, message){
 }
 
 function countPopularBikes(csvdata){
-   let bikeCount = {};
+    let bikeCount = {};
 
     let i;
     for (i = 1; i < csvdata["data"].length-1; i++) {
@@ -1168,6 +1191,8 @@ function makeLineChart(dataset, xName, yObjs, axisLables) {
 //function to get line chart data from map created from fillStationTripHourMap
 function getLineChartData(){
 
+    console.log(stationTripHourMap);
+
     let lineChartData = {};
 
     for (let stationId in stationTripHourMap){
@@ -1186,6 +1211,8 @@ function getLineChartData(){
         lineChartData[stationId] = objArr;
 
     }
+
+    console.log(lineChartData);
 
     return lineChartData;
 

@@ -4,17 +4,7 @@
 	<head>
 		<title>vBikes</title>
 
-        <!--Favicon 1-->
-        <!---->
-        <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">-->
-        <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
-        <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
-        <!--<link rel="manifest" href="/site.webmanifest">-->
-        <!--<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">-->
-        <!--<meta name="msapplication-TileColor" content="#da532c">-->
-        <!--<meta name="theme-color" content="#ffffff">-->
-
-        <!--Favicon 2-->
+        <!--Favicon-->
         <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -29,7 +19,7 @@
         <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
-        <!--Scripts below this-->
+        <!--Scripts-->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -64,7 +54,7 @@
                 </div>
             </section>
 
-    <!-- Page Wrapper -->
+            <!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Banner -->
@@ -116,7 +106,6 @@
 
 							<section id="three" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<!--<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>-->
 									<div class="content">
                                         <!--https://bl.ocks.org/mbhall88/b2504f8f3e384de4ff2b9dfa60f325e2-->
 										<h2 class="major">Number of Riders per Pass Type</h2>
@@ -131,29 +120,32 @@
                                     <h2 class="major">Average Distance Traveled</h2>
 									<!--<p id = "avgSpeed"></p>-->
 									<!--<p id = "totalDuration"></p>-->
+                                    <h3 style = "text-align:center;" id = "avgSpeed"></h3>
                                     <section class="features">
                                         <article>
-                                            <!--<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>-->
-                                            <div style="text-align: center;"><h3 class="major">Total Number of Trips</h3></div>
-                                            <div style="text-align: center;"><i><p id = "numTrips" style = "font-size: 30px"></p></i></div>
+                                            <div style="text-align: center;"><h3 class="major">Total One Way Count</h3></div>
+                                            <div style="text-align: center;"><i><p id = "numOneWay" style = "font-size: 30px"></p></i></div>
                                         </article>
                                         <article>
-                                            <!--<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>-->
-                                            <div style="text-align: center;"><h3 class="major">Average Distance in Kilometers</h3></div>
-                                            <div style="text-align: center;"><i><p id = "distKm" style = "font-size: 30px"></p></i></div>
+                                            <div style="text-align: center;"><h3 class="major">Total Round Trip Count</h3></div>
+                                            <div style="text-align: center;"><i><p id = "numRoundTrip" style = "font-size: 30px"></p></i></div>
                                         </article>
                                         <article>
-                                            <!--<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>-->
-                                            <div style="text-align: center;"><h3 class="major">Average Distance in Miles</h3></div>
-                                            <div style="text-align: center;"><i><p id = "distMiles" style = "font-size: 30px"></p></i></div>
+                                            <div style="text-align: center;"><h3 class="major">Average One Way Trip Distance</h3></div>
+                                            <div style="text-align: center;"><i><p id = "distOneWayKm" style = "font-size: 30px"></p></i></div>
                                         </article>
+                                        <article>
+                                            <div style="text-align: center;"><h3 class="major">Average Round Trip Distance</h3></div>
+                                            <div style="text-align: center;"><i><p id = "distRoundTripKm" style = "font-size: 30px"></p></i></div>
+                                        </article>
+
                                     </section>
+                                    <i><h3 id = "avgCombinedDist" style = "text-align:center;font-size: 30px;"></h3></i>
                                 </div>
                             </section>
 
 							<section id="five" class="wrapper spotlight style3">
 								<div class="inner">
-									<!--<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>-->
 									<div class="content">
 										<h2 class="major">Net Change in Bikes Per Station</h2>
                                         <p></p>
