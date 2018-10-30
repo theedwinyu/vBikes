@@ -121,7 +121,7 @@ function getAverageDistance(csvdata){
 
     let totalAvgDist = kilometers * (numOneWay/(numRoundTrip+numOneWay)) + kmRoundTrip * (numRoundTrip/(numRoundTrip+numOneWay));
     let roundedAvgDist = Math.round(totalAvgDist * 100) / 100;
-    document.getElementById("avgCombinedDist").innerHTML = "Total Average Distance: " + roundedAvgDist + " kilometers";
+    document.getElementById("avgCombinedDist").innerHTML = "Combined Average Distance: " + roundedAvgDist + " kilometers";
     return kilometers + " kilometers";
 }
 
@@ -253,11 +253,13 @@ function countRegularRiders(csvdata){
 //function to load data into pie/donut chart
 function d3PieChart(passHoldersArray){
 
+    document.getElementById("totalBikers").innerHTML = "Out of " + totalTrips + " total riders, there are " + (passHoldersArray[0][0] + passHoldersArray[1][0] + passHoldersArray[2][0]) + " regular riders.";
+    // document.getElementById("regBikers").innerHTML = (passHoldersArray[0][0] + passHoldersArray[1][0] + passHoldersArray[2][0]) + " regular riders";
+
     document.getElementById("regRidersDescription").innerHTML =
-        "Out of " + totalTrips + " total trips, " + (passHoldersArray[0][0] + passHoldersArray[1][0] + passHoldersArray[2][0]) +
-        " of them were done by regular riders who use bike sharing as a regular part of their commute. " +
-        "Hover over each section of the pie chart to see the exact count" +
-        ", as well as the breakdown of Trip Route Category-Passholder type combinations.";
+        // "Out of " + totalTrips + " total trips, " + (passHoldersArray[0][0] + passHoldersArray[1][0] + passHoldersArray[2][0]) +
+        // " of them were done by regular riders who use bike sharing as a regular part of their commute. " +
+        "Hover over each section of the pie chart to see the exact count and the breakdown of Trip Route Category-Passholder type combinations.";
 
     let donut = donutChart()
         .width(960)
@@ -575,6 +577,7 @@ function initMap(popularStartLoc, popularEndLoc,stationLatLongMap, startStations
         opacity: 1,
         radius: 15
     });
+
     heatmap.setMap(map);
     stationMarkers.push(new google.maps.Marker({position: startLoc, map: map}));
     stationMarkers.push(new google.maps.Marker({position: endLoc, map: map}));
