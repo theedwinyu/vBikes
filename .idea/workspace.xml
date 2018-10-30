@@ -66,12 +66,12 @@
     <session id="807446758">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -79,7 +79,7 @@
           <entry key="css" value="11" />
           <entry key="html" value="585" />
           <entry key="js" value="1402" />
-          <entry key="md" value="1826" />
+          <entry key="md" value="1866" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -87,6 +87,7 @@
           <entry key="CSS" value="11" />
           <entry key="HTML" value="585" />
           <entry key="JavaScript" value="1402" />
+          <entry key="Markdown" value="40" />
           <entry key="PLAIN_TEXT" value="1826" />
         </counts>
       </usages-collector>
@@ -149,7 +150,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state relative-caret-position="230">
               <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding>
                 <element signature="e#1058#1765#0" />
@@ -162,8 +163,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="575">
-                <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+              <first_editor relative-caret-position="-161">
+                <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               </first_editor>
               <second_editor />
             </state>
@@ -352,12 +353,13 @@
       <workItem from="1540788177210" duration="1041000" />
       <workItem from="1540848206372" duration="7800000" />
       <workItem from="1540901394229" duration="4732000" />
-      <workItem from="1540909223544" duration="80000" />
+      <workItem from="1540909223544" duration="240000" />
+      <workItem from="1540917572306" duration="904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166804000" />
+    <option name="totallyTimeSpent" value="167868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -457,6 +459,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#1058#1765#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/d3-tip.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5704">
@@ -484,28 +496,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#1058#1765#0" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-161">
+            <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-73">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="575">
-            <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
