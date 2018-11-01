@@ -27,7 +27,7 @@ See live here: [v-bikes.net](https://v-bikes.net/)
 
 5. Net Change in Bikes per Station
     * Multi-Line chart displaying the net change of bike trips per station throughout the course of a day
-    * Found the number of bikes leaving and arriving ****at a specific station and graphed the difference
+    * Found the number of bikes leaving and arriving at a specific station and graphed the difference
     * Can change the currently graphed station by using the drop-down menu
 
 # Built with #
