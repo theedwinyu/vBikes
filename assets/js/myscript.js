@@ -36,24 +36,6 @@ let totalDurationInSeconds = 0;
 let dataLineChart = [];
 let t = d3.transition().duration(1500);
 
-//Calculate and update Average distance in KM and miles in index.HTML
-function getAverageDistanceUsingDuration(){
-
-    let totalDurationHour = totalDurationInSeconds/3600.0;
-
-    //Assumed mph for average biker
-    let averageSpeed = 10;
-
-    //in Kilomters
-    let miles = Math.round( (totalDurationHour * averageSpeed/totalTrips) * 100) / 100;
-
-    // document.getElementById("avgSpeed").innerHTML = "Assuming the average speed for a biker in LA is " + averageSpeed + " miles/hour";
-    // document.getElementById("totalDuration").innerHTML = "Total duration of all trips: " + totalDurationInSeconds + " seconds";
-    // document.getElementById("numTrips").innerHTML = "Total number of trips: " + totalTrips;
-    // document.getElementById("distMiles").innerHTML = "Average Distance in miles: " + miles + " miles";
-
-}
-
 //function to calculate distance based on starting Lat-Long and ending Lat-Long using haversine formula
 function distanceLatLong(lat1, lon1, lat2, lon2) {
 
