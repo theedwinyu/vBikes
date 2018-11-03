@@ -557,7 +557,7 @@ function initMap(popularStartLoc, popularEndLoc,stationLatLongMap, startStations
         dissipating: true,
         maxIntensity: 10000,
         opacity: 1,
-        radius: 15
+        radius: 25
     });
 
     heatmap.setMap(map);
