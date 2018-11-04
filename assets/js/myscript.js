@@ -59,6 +59,7 @@ function getAverageDistance(csvdata){
     let numOneWay = 0;
     let numRoundTrip = 0;
 
+    //assume 10 km per hour
     let averageSpeed = 6;
 
     for (i = 1; i < csvdata["data"].length-1; i++){
@@ -79,6 +80,10 @@ function getAverageDistance(csvdata){
                 numRoundTrip += 1;
             }
             else{
+                // let distanceGMaps = (google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(lat1, lon1), new google.maps.LatLng(lat2, lon2)))/1000;
+                // console.log("Google Maps: " + distanceGMaps);
+                // let distanceFormula = distanceLatLong(lat1,lon1,lat2,lon2);
+                // console.log("Formula: " + distanceFormula);
                 totalDistance += distanceLatLong(lat1,lon1,lat2,lon2);
                 numOneWay += 1;
             }
@@ -86,7 +91,7 @@ function getAverageDistance(csvdata){
 
     }
 
-    document.getElementById("avgSpeed").innerHTML = "Assume that the average biker travels at " + averageSpeed + " Miles Per Hour.";
+    document.getElementById("avgSpeed").innerHTML = "Assume that the average biker travels at " + averageSpeed + " Kilometers Per Hour.";
 
     let timeHours = totalDurationRoundTrip/3600.0;
 
