@@ -31,7 +31,7 @@ See live here: [v-bikes.net](https://v-bikes.net/)
     * Can change the currently graphed station by using the drop-down menu
 
 # Built with #
-* Javascript, HTML, and CSS to build the website
+* Javascript, HTML, and CSS for Frontend
 * D3.js for the Bar Charts, Donut Chart, and the Multi-Line Chart
 * Google Maps Visualization API for the Heatmap
 * Papa Parse to parse the csv files
