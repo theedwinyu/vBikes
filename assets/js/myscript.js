@@ -442,16 +442,16 @@ function donutChart() {
                     // leave off 'dy' attr for first tspan so the 'dy' attr on text element works. The 'dy' attr on
                     // tspan effectively imitates a line break.
                     if (i === 0){
-                        tip += '<tspan x="0" font-size=".75em" dy = "-4em" style = "fill:white">' + key + ': ' + value + '</tspan>\n';
+                        tip += '<tspan x="0" font-size=".7em" dy = "-4em" style = "fill:white">' + key + ': ' + value + '</tspan>\n';
                     }
                     else {
-                        tip += '<tspan x="0" font-size=".75em" dy="2em" style = "fill:white">' + key + ': ' + value + '</tspan>';
+                        tip += '<tspan x="0" font-size=".7em" dy="2em" style = "fill:white">' + key + ': ' + value + '</tspan>';
 
                         if(key === "Probability") {
-                            tip += '<tspan x="0" font-size=".75em" dy="1em" style = "fill:white">' + "Total Count" + ': ' + ((data.data[key]) * totalTrips) + '</tspan>';
+                            tip += '<tspan x="0" font-size=".7em" dy="1em" style = "fill:white">' + "Total Count" + ': ' + ((data.data[key]) * totalTrips) + '</tspan>';
                         }
                         else{
-                            tip += '<tspan x="0" font-size=".75em" dy="1em" style = "fill:white">' + "Total Count" + ': ' + Math.round(((data.data[key]) * totalCountRouteMap[data.data["Pass"]])) + '</tspan>';
+                            tip += '<tspan x="0" font-size=".7em" dy="1em" style = "fill:white">' + "Total Count" + ': ' + Math.round(((data.data[key]) * totalCountRouteMap[data.data["Pass"]])) + '</tspan>';
                         }
                     }
                     i++;
