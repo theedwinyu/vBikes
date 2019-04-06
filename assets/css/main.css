@@ -131,21 +131,23 @@ footer, header, hgroup, menu, nav, section {
 }
 
 #map {
-    /*height: 400px;  !* The height is 400 pixels *!*/
-    /*width: 100%;  !* The width is the width of the web page *!*/
-	height: 68vh;
-	width: 152vh;
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+	/*height: 68vh;*/
+	/*width: 70vw;*/
 }
 
 #vis {
     /*height: 100%;*/
     margin: 0;
     height: 105vh;
+    width: 70vw;
 }
 
 #pieChart {
     margin: 0;
     height: 90vh;
+    width: 70vw;
 }
 
 svg {
