@@ -141,7 +141,6 @@ footer, header, hgroup, menu, nav, section {
     /*height: 100%;*/
     margin: 0;
     height: 105vh;
-    width: 70vw;
 }
 
 #pieChart {

@@ -325,10 +325,15 @@ function donutChart() {
             // ===========================================================================================
             // append the svg object to the selection
             let svgPie = selection.append('svg')
-                .attr('width', width + margin.left + margin.right)
-                .attr('height', height + margin.top + margin.bottom)
+                // .attr('width', width + margin.left + margin.right)
+                // .attr('height', height + margin.top + margin.bottom)
+                .attr('width','100%')
+                .attr('height','100%')
+                .attr('viewBox','0 0 '+width+' '+height)
+                .attr('preserveAspectRatio','xMinYMin')
                 .append('g')
                 .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+                // .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
             // ===========================================================================================
 
             // ===========================================================================================
@@ -680,9 +685,12 @@ function updateBarChart(dataArray, message){
 
     svgBar = d3.select('#vis')
         .append('svg')
-        .attr('width', width)
-        .attr('height', height)
+        .attr('width', '100%')
+        .attr('height', '100%')
+        .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
+        .attr('preserveAspectRatio','xMinYMin')
         .append('g')
+        .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")")
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
     width = width - margin.left - margin.right;
