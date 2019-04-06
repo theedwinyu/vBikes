@@ -138,16 +138,16 @@ footer, header, hgroup, menu, nav, section {
 }
 
 #vis {
-    /*height: 100%;*/
+    height: 100%;
     margin: 0;
-    height: 105vh;
+    /*height: 105vh;*/
 }
 
-#pieChart {
-    margin: 0;
-    height: 90vh;
-    width: 70vw;
-}
+/*#pieChart {*/
+    /*margin: 0;*/
+    /*height: 90vh;*/
+    /*width: 70vw;*/
+/*}*/
 
 svg {
     shape-rendering: crispEdges;

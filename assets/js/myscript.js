@@ -687,10 +687,10 @@ function updateBarChart(dataArray, message){
         .append('svg')
         .attr('width', '100%')
         .attr('height', '100%')
-        .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
+        .attr('viewBox','0 0 '+width+' '+height)
         .attr('preserveAspectRatio','xMinYMin')
         .append('g')
-        .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")")
+        .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
     width = width - margin.left - margin.right;
