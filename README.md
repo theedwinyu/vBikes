@@ -1,7 +1,7 @@
 # vBikes
 Visualizing Los Angeles Bike share data from July 2016 to March 2017
 
-See live here: [v-bikes.net](https://v-bikes.net/)
+See live here: [edwinyu.me/vBikes/](https://edwinyu.me/vBikes/)
 
 # Features #
 1. Station Popularity
